@@ -2,8 +2,6 @@
   display: none;
 }
 
-/*Javascript에서 className 부여로 요소를 숨기기 위함*/
-
 * {
   box-sizing: border-box;
 }
@@ -142,7 +140,6 @@ body {
 }
 
 #todo-list {
-  /* text-align: center; */
   overflow-y: scroll;
   padding-left: 0;
 }

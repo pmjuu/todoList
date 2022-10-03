@@ -1,4 +1,4 @@
-# todolist
+# To do List
 
 ## 구현 기능
 1. 시간 표시
@@ -8,4 +8,4 @@
 5. 배경이미지와 격언 임의 변경
 
 ## 링크
-[todolist page](http://3.36.67.190/todolist/)
+[todolist page](https://pmjuu.github.io/todolist/)
