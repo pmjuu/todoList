@@ -91,7 +91,7 @@ body {
 #clock {
   text-align: center;
   height: 150px;
-  font-size: 7rem;
+  font-size: 5em;
   margin: 10px;
   color: white;
   padding: -100px;
@@ -115,7 +115,7 @@ body {
   text-align: center;
   color: white;
   font-size: 1rem;
-  width: 540px;
+  width: 50%;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.1);
   font-weight: 500;
@@ -152,8 +152,14 @@ body {
   margin-top: 40px;
   margin-bottom: 50px;
   font-size: 1rem;
-  width: 540px;
+  width: 50%;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#todo-list li span {
+  text-align: left;
 }
 
 #todo-list li:hover {
@@ -174,6 +180,16 @@ body {
 
 #todo-list button:hover {
   cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.4);
+  transition: all, 0.4s;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.darker {
+  color: gray;
 }
 
 #quote {

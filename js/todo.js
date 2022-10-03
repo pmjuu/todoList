@@ -10,6 +10,13 @@ function saveToDos() {
   localStorage.setItem(TODOS_KEY, JSON.stringify(toDos))
 }
 
+function checkToDo(event) {
+  // const li = event.target.parentElement
+  // li.classList.toggle('darker')
+  const span = event.target.nextSibling
+  span.classList.toggle('strike-through') //새로고침하면 취소선 사라짐...
+}
+
 //console.dir(event)해보면 click event 객체에 대한 정보를 알 수 있다.
 function deleteToDo(event) {
   const li = event.target.parentElement
@@ -21,12 +28,19 @@ function deleteToDo(event) {
 function paintToDo(newToDoObj) {
   const li = document.createElement("li")
   li.id = newToDoObj.id
+
+  const checkBtn = document.createElement('button')
+  checkBtn.innerText = "✓"
+  checkBtn.addEventListener('click', checkToDo)
+
   const span = document.createElement('span')
   span.innerText = newToDoObj.text
+
   const button = document.createElement('button')
-  button.innerText = "❌"
+  button.innerText = "X"
   button.addEventListener('click', deleteToDo)
 
+  li.appendChild(checkBtn)
   li.appendChild(span)
   li.appendChild(button)
   toDoList.appendChild(li)
