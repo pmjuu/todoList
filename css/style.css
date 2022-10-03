@@ -140,8 +140,10 @@ body {
 }
 
 #todo-list {
+  display: block;
   overflow-y: scroll;
   padding-left: 0;
+  overflow: hidden;
 }
 
 #todo-list li {
@@ -154,10 +156,7 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-
-#todo-list li span {
-  text-align: left;
+  z-index: 1;
 }
 
 #todo-list li:hover {
@@ -191,10 +190,12 @@ body {
 }
 
 #quote {
+  z-index: -1;
+  display: block;
   text-align: center;
   position: fixed;
   bottom: 20px;
-  margin-left: 36px;
+  margin-left: 20px;
   font-size: 0.8rem;
   font-weight: 200;
   color: rgba(255, 255, 255, 0.8);
