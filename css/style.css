@@ -21,7 +21,8 @@ body {
 }
 
 #bgImage {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   left: 0;
   top: 0;
   height: 100%;
@@ -141,9 +142,10 @@ body {
 }
 
 #todo-list {
-  text-align: center;
+  /* text-align: center; */
   height: 210px;
   overflow-y: scroll;
+  padding-left: 0;
 }
 
 #todo-list li {
@@ -152,7 +154,7 @@ body {
   margin-top: 40px;
   margin-bottom: 50px;
   font-size: 1rem;
-  width: 50%;
+  width: 300px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -163,7 +165,7 @@ body {
 }
 
 #todo-list li:hover {
-  color: rgb(147, 232, 255);
+  color: rgb(141, 186, 198);
 }
 
 #todo-list button {
