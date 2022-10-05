@@ -34,9 +34,6 @@ function paintToDo(newToDoObj) {
   checkBtn.innerText = "✓"
   checkBtn.addEventListener('click', checkToDo)
 
-  // const listdiv = document.createElement('div')
-  // li.appendChild(listdiv)
-
   const span = document.createElement('span')
   li.appendChild(span)
   span.innerText = newToDoObj.text
