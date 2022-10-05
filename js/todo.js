@@ -30,18 +30,21 @@ function paintToDo(newToDoObj) {
   li.id = newToDoObj.id
 
   const checkBtn = document.createElement('button')
+  li.appendChild(checkBtn)
   checkBtn.innerText = "✓"
   checkBtn.addEventListener('click', checkToDo)
 
+  // const listdiv = document.createElement('div')
+  // li.appendChild(listdiv)
+
   const span = document.createElement('span')
+  li.appendChild(span)
   span.innerText = newToDoObj.text
 
   const button = document.createElement('button')
   button.innerText = "X"
   button.addEventListener('click', deleteToDo)
 
-  li.appendChild(checkBtn)
-  li.appendChild(span)
   li.appendChild(button)
   toDoList.appendChild(li)
 }
